@@ -1,21 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Поехали!</title>
-    <meta name="description" content="Poehali.dev — запусти свой сайт за минуту!" />
-    <meta name="author" content="poehali.dev" />
-     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://cdn.poehali.dev/files/b53399cc-b3be-43d9-a5dd-c8ce4b3d4b46.png" alt="Science logo" class="logo-image">
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Пункт 1</a></li>
+          <li><a href="#">Пункт 2</a></li>
+          <li><a href="#">Пункт 3</a></li>
+          <li><a href="#">Пункт 4</a></li>
+        </ul>
+      </nav>
+      <div class="phone">
+        <a href="tel:+78009999999">+7 (800) 999-99-99</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
-    <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
+  <main>
+    <section class="slider">
+      <div class="container slider-container">
+        <div class="slider-image">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop" alt="Горы и лес">
+          <div class="slider-controls">
+            <a href="#" class="control prev">&lt;</a>
+            <a href="#" class="control next">&gt;</a>
+            <div class="slider-dots">
+              <span class="dot"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-content">
+          <h2>Слайд 3</h2>
+          <p>Сайт выбирает помимо динамизму, верстатичную, вебмастеру спонсировать несколько общая более менее осмыслённого текста рыбы на русском в её взятым обычной. Пусть даже написанный осмысленно-связанного захватывающим существование разметки используем побезопасней универсальный наш речей.</p>
+          <a href="#" class="button">Кнопка</a>
+        </div>
+      </div>
+    </section>
 
-  </head>
+    <section class="search-block">
+      <div class="container search-container">
+        <div class="search-title">
+          <h3>Блок с поиском</h3>
+          <div class="diamonds">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+          </div>
+        </div>
+        <div class="search-form">
+          <form action="#" method="get">
+            <div class="search-input">
+              <input type="text" placeholder="Товары, услуги...">
+              <button type="submit" class="search-button">Поиск</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section class="events">
+      <div class="container events-container">
+        <h3>Мероприятия на <span class="date-highlight">18 апреля</span></h3>
+        
+        <div class="calendar">
+          <div class="calendar-header">
+            <a href="#" class="calendar-prev">&lt;</a>
+            <div class="month">Апрель 2024</div>
+            <a href="#" class="calendar-next">&gt;</a>
+          </div>
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+                <th>Вс</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td class="active">18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>30</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="events-list">
+          <div class="event-card">
+            <div class="event-tags">
+              <span class="tag">Очень длинный тэг</span>
+              <span class="tag">Тэг</span>
+              <span class="tag">Очень длинный тэг</span>
+              <span class="tag">Тэг</span>
+              <span class="tag">Очень длинный тэг</span>
+              <span class="tag">Тэг</span>
+              <span class="tag">Тэг</span>
+              <span class="tag">Тэг</span>
+            </div>
+            <div class="event-description">
+              <h4>Международная научно-практическая конференция: "Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития"</h4>
+            </div>
+            <div class="event-buttons">
+              <a href="#" class="button button-outline">Написать</a>
+              <a href="#" class="button button-primary">Подробнее &rarr;</a>
+            </div>
+          </div>
+
+          <div class="event-categories">
+            <span class="category">Образование</span>
+            <span class="category">Онлайн</span>
+            <span class="category">Студенты</span>
+          </div>
+
+          <div class="event-card">
+            <div class="event-description">
+              <h4>Международная научно-практическая конференция: "Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития"</h4>
+            </div>
+            <div class="event-buttons">
+              <a href="#" class="button button-outline">Написать</a>
+              <a href="#" class="button button-primary">Подробнее &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <!-- Футер можно добавить при необходимости -->
+    </div>
+  </footer>
+</body>
 </html>
